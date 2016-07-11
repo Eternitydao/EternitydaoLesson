@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FriendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_eventlistcell.png" translatesAutoresizingMaskIntoConstraints="NO" id="7jw-gB-ZyC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xVS-IS-xsl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYL-51-vUX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="31"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tYL-51-vUX" secondAttribute="bottom" id="AW9-iY-Kil"/>
+                            <constraint firstItem="tYL-51-vUX" firstAttribute="top" secondItem="xVS-IS-xsl" secondAttribute="top" id="iIu-d2-2xm"/>
+                            <constraint firstAttribute="trailing" secondItem="tYL-51-vUX" secondAttribute="trailing" id="nyk-BR-4Ck"/>
+                            <constraint firstItem="tYL-51-vUX" firstAttribute="leading" secondItem="xVS-IS-xsl" secondAttribute="leading" id="qzG-ye-TWs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xVS-IS-xsl" secondAttribute="trailing" id="JXM-Ex-HYV"/>
+                    <constraint firstItem="7jw-gB-ZyC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SXw-1F-EpG"/>
+                    <constraint firstItem="xVS-IS-xsl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wdr-9L-PCQ"/>
+                    <constraint firstItem="xVS-IS-xsl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iCL-04-IJg"/>
+                    <constraint firstItem="7jw-gB-ZyC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lMz-Aq-0Os"/>
+                    <constraint firstAttribute="trailing" secondItem="7jw-gB-ZyC" secondAttribute="trailing" id="muh-Gv-1Us"/>
+                    <constraint firstAttribute="bottom" secondItem="7jw-gB-ZyC" secondAttribute="bottom" id="oc9-oX-7iU"/>
+                    <constraint firstAttribute="bottom" secondItem="xVS-IS-xsl" secondAttribute="bottom" id="tfS-EA-jyf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="friendNameLabel" destination="tYL-51-vUX" id="ibl-GS-h8w"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="266"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bg_eventlistcell.png" width="304" height="140"/>
+    </resources>
+</document>

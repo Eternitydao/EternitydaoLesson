@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="OtherImageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="321" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="321" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-7z-qg6">
+                        <rect key="frame" x="111" y="15" width="100" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="UmA-s4-2Yp"/>
+                            <constraint firstAttribute="height" constant="70" id="c0n-88-Vuf"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="qq.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTl-5z-TfO">
+                        <rect key="frame" x="8" y="8" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Gxu-Og-lAi"/>
+                            <constraint firstAttribute="width" constant="25" id="Mqy-4A-zT4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QDp-7z-qg6" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="9rD-5d-ezp"/>
+                    <constraint firstItem="QDp-7z-qg6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IS5-v3-Phe"/>
+                    <constraint firstItem="JTl-5z-TfO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Myf-lF-oK8"/>
+                    <constraint firstItem="JTl-5z-TfO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="VXB-nH-Kun"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="otherImageView" destination="QDp-7z-qg6" id="fXs-Dj-Wdf"/>
+            </connections>
+            <point key="canvasLocation" x="183.5" y="399"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="qq.png" width="180" height="200"/>
+    </resources>
+</document>
