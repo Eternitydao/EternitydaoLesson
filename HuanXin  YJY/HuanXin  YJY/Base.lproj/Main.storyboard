@@ -41,7 +41,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Cr-SQ-vSp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="384"/>
+            <point key="canvasLocation" x="423" y="386"/>
         </scene>
         <!--好友列表-->
         <scene sceneID="H6B-Gp-vBa">
@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="974" y="335"/>
         </scene>
-        <!--个人中心-->
+        <!--个人-->
         <scene sceneID="7CG-PK-rxt">
             <objects>
                 <viewController id="56W-Lc-A5S" customClass="LoginViewController" sceneMemberID="viewController">
@@ -150,7 +150,7 @@
                             <constraint firstAttribute="trailing" secondItem="FUK-ch-WXF" secondAttribute="trailing" constant="63" id="x5W-Ra-7QK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="个人中心" id="Dpl-SJ-Qne"/>
+                    <navigationItem key="navigationItem" title="个人" id="Dpl-SJ-Qne"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="passWordTextField" destination="UMV-j0-2k4" id="lah-hh-fcX"/>
