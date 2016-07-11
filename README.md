@@ -7,3 +7,5 @@ What re you fucking do?
 //fuck
 
 // guoxu 
+
+就是打开连接方式登记
